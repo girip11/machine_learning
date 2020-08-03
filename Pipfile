@@ -15,6 +15,11 @@ pydocstyle = "*"
 pytest = "*"
 
 [packages]
+jupyter = "*"
+pandas = "*"
+matplotlib = "*"
+numpy = "*"
+scikit-learn = "*"
 
 [requires]
 python_version = "3.8"

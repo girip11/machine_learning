@@ -51,10 +51,10 @@
     "python.linting.pydocstyleEnabled": true,
     "python.linting.enabled": true,
     "python.linting.lintOnSave": true,
-
+    "python.dataScience.allowImportFromNotebook": true,
     "python.testing.pytestEnabled": true,
     "python.testing.pytestPath": "pytest",
-    "python.testing.pytestArgs": ["test"],
+    // "python.testing.pytestArgs": ["test"],
     "emeraldwalk.runonsave": {
       "commands": [
         {
