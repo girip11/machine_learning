@@ -13,6 +13,7 @@ isort = "*"
 mypy = "*"
 pydocstyle = "*"
 pytest = "*"
+nbqa = "*"
 
 [packages]
 jupyter = "*"
