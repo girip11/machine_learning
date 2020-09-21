@@ -58,3 +58,6 @@ Press `Enter` in command mode to enter the edit mode.
 ## References
 
 * [Jupyter Notebook Shortcuts by Ventsislav Yordanov](https://towardsdatascience.com/jypyter-notebook-shortcuts-bf0101a98330)
+* [Jupyter notebook basics](https://www.dataquest.io/blog/jupyter-notebook-tutorial/)
+* [Jupyter notebook advanced tutorial](https://www.dataquest.io/blog/advanced-jupyter-notebooks-tutorial/)
+* [Jupyter notebook tricks and tips](https://www.dataquest.io/blog/jupyter-notebook-tips-tricks-shortcuts/)

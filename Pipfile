@@ -11,16 +11,17 @@ flake8 = "*"
 ipython = "*"
 isort = "*"
 mypy = "*"
+nbqa = "*"
 pydocstyle = "*"
 pytest = "*"
-nbqa = "*"
 
 [packages]
 jupyter = "*"
-pandas = "*"
 matplotlib = "*"
 numpy = "*"
+pandas = "*"
 scikit-learn = "*"
+seaborn = "*"
 xlrd = "*"
 
 [requires]
