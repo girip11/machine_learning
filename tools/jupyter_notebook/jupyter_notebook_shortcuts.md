@@ -53,6 +53,8 @@ Press `Enter` in command mode to enter the edit mode.
 * `Down` - move cursor down
 * `Up`  - move cursor up
 
+A list of interesting jupyter notebooks collection can be found [here](https://github.com/jupyter/jupyter/wiki/A-gallery-of-interesting-Jupyter-Notebooks)
+
 ---
 
 ## References
