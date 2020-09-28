@@ -4,12 +4,15 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
+# Install pre-commit if required
+# To run use `pipenv run pre-commit run -a`
 autoflake = "*"
 bandit = "*"
 black = "*"
 flake8 = "*"
 ipython = "*"
 isort = "*"
+jupytext = "*"
 mypy = "*"
 nbqa = "*"
 pydocstyle = "*"
