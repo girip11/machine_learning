@@ -26,6 +26,7 @@ pandas = "*"
 scikit-learn = "*"
 seaborn = "*"
 xlrd = "*"
+ipykernel = "*"
 
 [requires]
 python_version = "3.8"

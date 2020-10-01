@@ -12,5 +12,8 @@ repos:
         types: [jupyter]
         require_serial: true
         files: '.*\.ipynb$'
+        always_run: false
+        stages:
+          - commit
         args:
           - "--nbqa-config=pyproject.toml"
