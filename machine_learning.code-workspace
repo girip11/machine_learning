@@ -62,6 +62,7 @@
           "isAsync": false
         }
       ]
-    }
+    },
+    "python.dataScience.jupyterServerURI": "local"
   }
 }

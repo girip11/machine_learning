@@ -8,3 +8,8 @@ isort = 1
 
 [tool.nbqa.config]
 isort = ".isort.cfg"
+
+[tool.nbqa.addopts]
+flake8 = [
+  "--ignore=E302,E305",
+]
