@@ -90,3 +90,5 @@ plt.show()
 * [Feature Scaling for Machine Learning](https://www.analyticsvidhya.com/blog/2020/04/feature-scaling-machine-learning-normalization-standardization/)
 
 * [All about feature scaling](https://towardsdatascience.com/all-about-feature-scaling-bcc0ad75cb35)
+
+* [All about feature scaling and normalization](https://sebastianraschka.com/Articles/2014_about_feature_scaling.html)
