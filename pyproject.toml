@@ -11,5 +11,5 @@ isort = ".isort.cfg"
 
 [tool.nbqa.addopts]
 flake8 = [
-  "--ignore=E302,E305",
+  "--extend-ignore=E703,E302,E305",
 ]

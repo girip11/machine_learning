@@ -3,13 +3,14 @@ default_language_version:
   python: python3
 repos:
   - repo: "https://github.com/nbQA-dev/nbQA"
-    rev: 0.2.2
+    rev: 0.2.3
     hooks:
       - id: nbqa
         args:
           - black
         name: nbqa-black
         alias: nbqa-black
+        language: system
         additional_dependencies:
           - black
       - id: nbqa
@@ -17,6 +18,7 @@ repos:
           - flake8
         name: nbqa-flake8
         alias: nbqa-flake8
+        language: system
         additional_dependencies:
           - flake8
       - id: nbqa
@@ -24,5 +26,6 @@ repos:
           - isort
         name: nbqa-isort
         alias: nbqa-isort
+        language: system
         additional_dependencies:
           - isort
