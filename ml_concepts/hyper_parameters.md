@@ -8,7 +8,6 @@
   * Model hyperparameter - These cannot be inferred while fitting the model to the training set. Ex - topology and size of neural network.
   * Algorithm hyperparameter - Affect the speed and quality of the learning process. Ex- learning rate
 
-
 ---
 
 ## References
