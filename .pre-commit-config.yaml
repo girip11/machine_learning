@@ -2,30 +2,34 @@ default_language_version:
   # force all unspecified python hooks to run python3
   python: python3
 repos:
-  - repo: "https://github.com/nbQA-dev/nbQA"
-    rev: 0.2.3
+  - repo: local
     hooks:
-      - id: nbqa
-        args:
-          - black
+      - id: nbqa-black
         name: nbqa-black
         alias: nbqa-black
-        language: system
-        additional_dependencies:
-          - black
-      - id: nbqa
+        entry: nbqa
         args:
-          - flake8
+          - black
+          - "--nbqa-mutate"
+          - "--nbqa-config=pyproject.toml"
+        language: system
+        types: [jupyter]
+      - id: nbqa-flake8
         name: nbqa-flake8
         alias: nbqa-flake8
-        language: system
-        additional_dependencies:
-          - flake8
-      - id: nbqa
+        entry: nbqa
         args:
-          - isort
+          - flake8
+          - "--nbqa-config=setup.cfg"
+        language: system
+        types: [jupyter]
+      - id: nbqa-isort
         name: nbqa-isort
         alias: nbqa-isort
-        language: system
-        additional_dependencies:
+        entry: nbqa
+        args:
           - isort
+          - "--nbqa-mutate"
+          - "--nbqa-config=.isort.cfg"
+        language: system
+        types: [jupyter]
