@@ -18,6 +18,7 @@ mypy = "*"
 nbqa = "*"
 pydocstyle = "*"
 pytest = "*"
+pyupgrade = "*"
 
 [packages]
 jupyter = "*"
