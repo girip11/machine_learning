@@ -16,10 +16,10 @@ repos:
       - id: nbqa-flake8
         args:
           - "--nbqa-config=setup.cfg"
-      - id: nbqa-mypy
-        args:
-          - "--nbqa-config=setup.cfg"
       - id: nbqa-pyupgrade
         args:
           - "--nbqa-mutate"
           - "--py38-plus"
+      # - id: nbqa-mypy
+      #   args:
+      #     - "--nbqa-config=setup.cfg"
