@@ -19,6 +19,7 @@ nbqa = "*"
 pydocstyle = "*"
 pytest = "*"
 pyupgrade = "*"
+jupyterthemes = "*"
 
 [packages]
 jupyter = "*"
