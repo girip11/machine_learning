@@ -10,5 +10,6 @@ After we install **jupyterthemes**, we need to restart the jupyter notebook.
 
 * `jt --help`
 * `jt -l` - List available themes
-* `jt -t <theme_name>` - Install a particular theme. I prefer `jt -t monokai`
+* `jt -t <theme_name>` - Install a particular theme. I prefer `jt -t onedork`
 * `jt -r` - Reset to default theme
+* `jt -t onedork -cellw 100% -lineh 170` - Changes the theme, sets the cell width to 100%.
