@@ -39,6 +39,7 @@
     "shellcheck.useWorkspaceRootAsCwd": true,
     "shellcheck.run": "onSave",
     "shellformat.flag": "-i 2 -ci -sr -bn",
+    "python.languageServer": "Pylance",
     "python.pythonPath": "/home/girish/.local/share/virtualenvs/machine_learning-jhOHL3kD/bin/python",
     "python.pipenvPath": "/home/girish/.pyenv/shims/pipenv",
     "python.formatting.provider": "black",
