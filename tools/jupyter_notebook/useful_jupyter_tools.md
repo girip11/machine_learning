@@ -1,6 +1,14 @@
-# Changing themes of jupyter notebook
+# Useful jupyter notebook tools and extensions
 
-## Install **jupyterthemes**
+## Notebook diff using nbdime
+
+* To compare the diff between the notebooks, use [nbdime](https://nbdime.readthedocs.io/en/latest/).
+
+## Running QA tools on notebook using nbQA
+
+* [nbqa](https://nbqa.readthedocs.io/en/latest/) can be used to run quality assurance tools like flake8, pylint, mypy on notebooks.
+
+## Changing themes of jupyter notebook using **jupyterthemes**
 
 * `conda install -c conda-forge jupyterthemes` or `pip install jupyterthemes`
 
