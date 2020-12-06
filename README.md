@@ -24,16 +24,21 @@ This repository contains the following
 
 * [Linear algebra by Krista King](https://www.udemy.com/share/101v8oCUMfd1lVR34=/) in udemy.
 * Probability course by Krista King in udemy.
+* [Part I: Applied Math](https://www.deeplearningbook.org/)
 
-### Classical ML algorithms
+### Machine learning algorithms
 
-* [Machine learning course](https://www.udemy.com/share/101WciCUMfd1lVR34=/) from udemy
-* Master Machine Learning Algorithms - Discover how they work by Jason Brownlee.
+* [Udemy Machine learning course](https://www.udemy.com/share/101WciCUMfd1lVR34=/)
+* [Andrew Ng course on machine learning](https://youtube.com/playlist?list=PLLssT5z_DsK-h9vYZkQkYNWcItqhlRJLN)
+* [Hands–On Machine Learning with Scikit–Learn and TensorFlow](https://www.amazon.in/Hands-Machine-Learning-Scikit-Learn-TensorFlow/dp/1491962291)
+* [Data Preparation for Machine Learning](https://machinelearningmastery.com/data-preparation-for-machine-learning/)
 
 ### Deep learning
 
+* [Deep Learning for Coders with Fastai and PyTorch](https://www.amazon.in/Deep-Learning-Coders-fastai-PyTorch/dp/1492045527)
+* [Deeplearningbook.org](https://www.deeplearningbook.org/)
 * [Dive into Deep learning](https://d2l.ai/d2l-en.pdf)
-* [Machine learning course](https://www.udemy.com/share/101WciCUMfd1lVR34=/) from udemy
+* [Udemy Machine learning course](https://www.udemy.com/share/101WyWCUMfd1lVR34=/)
 
 ## Additional references
 
