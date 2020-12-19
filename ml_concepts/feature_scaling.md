@@ -16,6 +16,7 @@ Commonly used feature scaling techniques are
 
 * Normalization
 * Standardization
+* Robust scaling
 
 ## Normalization
 
@@ -82,6 +83,10 @@ sns.kdeplot(scaled_df["x2"], ax=ax2)
 sns.kdeplot(scaled_df["x3"], ax=ax2)
 plt.show()
 ```
+
+## Robust Scaling
+
+
 
 ---
 
