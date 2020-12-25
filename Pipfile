@@ -37,6 +37,11 @@ sentencepiece = "*"
 torch = {file = "https://download.pytorch.org/whl/cu110/torch-1.7.1%2Bcu110-cp38-cp38-linux_x86_64.whl"}
 torchvision = {file = "https://download.pytorch.org/whl/cu110/torchvision-0.8.2%2Bcu110-cp38-cp38-linux_x86_64.whl"}
 fastai = "*"
+fastbook = "*"
+gputil = "*"
+psutil = "*"
+humanize = "*"
+jupyter-http-over-ws = "*"
 
 [requires]
 python_version = "3.8"
