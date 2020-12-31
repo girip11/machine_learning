@@ -127,3 +127,4 @@ dmypy.json
 
 tryouts/**/*.csv
 .idea/
+dataset/
