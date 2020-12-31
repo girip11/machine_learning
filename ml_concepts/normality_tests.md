@@ -17,6 +17,8 @@ Else:
 * Density plots(smoothened version of histogram). With fewer samples, it might be hard to visually detect if the features normal distribution.
 * **Quantile-Quantile plot**(QQ-plot) is a better way to evaluate the normality assumption and these plots are independent of the sample size.
 
+* A very good notebook on qqplots can be found [here](http://www.cse.chalmers.se/~richajo/dit862/L4/Lecture%204%20(Q-Q%20plots).html)
+
 > With QQ-plots we only need to ascertain whether the data points follow the line (sometimes referred as Henry’s line).
 > If points are close to the reference line and within the confidence bands, the normality assumption can be considered as met. The bigger the deviation between the points and the reference line and the more they lie outside the confidence bands, the less likely that the normality condition is met.
 > When facing a non-normal distribution as shown by the QQ-plot, the first step is usually to apply the logarithm transformation on the data and recheck to see whether the log-transformed data are normally distributed.
