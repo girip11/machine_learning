@@ -42,6 +42,8 @@ gputil = "*"
 psutil = "*"
 humanize = "*"
 jupyter-http-over-ws = "*"
+seaborn-qqplot = "*"
+voila = "*"
 
 [requires]
 python_version = "3.8"
