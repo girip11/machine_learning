@@ -3,10 +3,12 @@
 Feature selection methods can be categorized in to
 
 * Filter methods
-* Wrapper methods
 * Embedded methods
+* Wrapper methods
 
-## Filter methods
+![Feature selection](./assets/feature_selection.png)
+
+## 1. Filter methods
 
 * Filter methods are model agnostic. They use statistical methods to determine how the feature is correlated to the target variable.
 
@@ -63,6 +65,14 @@ Feature selection methods can be categorized in to
 * Correlation coefficient takes values in the range [-1, 1], with -1 for strong negative correlation while 1 stands for strong positive correlation and 0 means no correlation.
 
 * Using the correlation matrix `pandas.DataFrame.corr`, we can determine features that are correlated with each other. Using this information we can retain only one of the correlated feature and remove the other.
+
+## 2. Embedded Methods
+
+* Regularization methods (Lasso, ridge for linear models) can be used to determine the feature importances. To select some features based on the threshold of their feature importances, we can use `sklearn.feature_selection.SelectFromModel`.
+* Some models(predictors) contain feature importances in the `coef_` attribute while few others(like random forest/ensemble classifiers) provide the `feature_importances_` attribute.
+* `sklearn.feature_selection.SelectFromModel` can be used to filter features based on a threshold or limiting using `max_features`
+
+## 3. Wrapper methods
 
 ---
 
