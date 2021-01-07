@@ -45,3 +45,5 @@ This repository contains the following
 * Data Preparation for Machine Learning by Jason Brownlee
 
 * [Machinelearningplus.com](https://www.machinelearningplus.com/) contains a lot of useful articles.
+
+* [ML cheatsheet](https://ml-cheatsheet.readthedocs.io/en/latest)
