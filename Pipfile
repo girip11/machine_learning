@@ -45,6 +45,8 @@ jupyter-http-over-ws = "*"
 seaborn-qqplot = "*"
 voila = "*"
 tensorflow = "*"
+pydot = "*"
+category-encoders = "*"
 
 [requires]
 python_version = "3.8"
