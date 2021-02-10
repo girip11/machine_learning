@@ -24,7 +24,6 @@
 
 * First cell of the notebook must include `#default_exp module_name`.
 * `#export` - Export the code in the current cell to the python module
-* `#exports` -
 * `#hide` - Hide the cell when generating the docs
 
 * Autoreload the changes from modules of other notebooks can be done by adding the following snippet on top of your current working notebook
@@ -36,6 +35,22 @@
 
 * Cells containing `assert` statements automatically become tests.
 * Within the notebook, documentation can be viewed using `show_doc(class_func_mehtod)`
+
+* Notebook names starting with underscores are not considered for building modules or docs or running tests.
+
+## View docs locally
+
+```Bash
+gem install bundler jekyll
+# enusre the repo has Gemfile
+bundle install
+```
+
+* `make docs_serve` to view the docs locally.
+
+## Sample notebooks
+
+* Sample notebooks using nbdev can be found [here](https://github.com/fastai/nbdev/tree/master/nbs)
 
 ---
 
