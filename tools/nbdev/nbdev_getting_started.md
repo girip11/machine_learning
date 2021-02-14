@@ -26,10 +26,11 @@
 * `#export` - Export the code in the current cell to the python module
 * `#hide` - Hide the cell when generating the docs
 
-* Autoreload the changes from modules of other notebooks can be done by adding the following snippet on top of your current working notebook
+* [Autoreload the changes](https://switowski.com/blog/ipython-autoreload) from modules of other notebooks can be done by adding the following snippet on top of your current working notebook
 
 ```Python
 %load_ext autoreload
+# 2 refers to reload all imported modules that changed.
 %autoreload 2
 ```
 
