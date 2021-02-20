@@ -289,4 +289,88 @@ theta =  theta - learning_rate * Gradient(J(theta)) / sqrt(s+epsilon)
 
 ## Learning rate scheduling
 
+* Instead of going with constant learning rate, we could use learning schedules to update the learning rate automatically as the epochs increases.
+
+* Exponential, performance and 1cycle scheduling can speed up convergence.
+
+### Power scheduling
+
+* t - current epoch number
+* s - Number of epochs
+* c - usually set to 1
+
+```python
+# learning rate as a function of iteration/epoch number
+lr = init_lr / (1 + t/s) ** c
+```
+
+* When number of epochs keep increasing by `s`, learning rate is reduced by a factor of 2,3,4 etc.
+
+* In this schedule, initially the learning rate drops quickly but then starts to drop slowly.
+
+### Exponential scheduling
+
+* As we complete `s` epochs, learning rate keeps getting dropped by a factor of 10.
+
+```Python
+lr = init_lr * (0.1) ** (t/s)
+```
+
+### Piecewise constant scheduling
+
+* For every epoch range, we end up using different learning rates. Within that epoch range, the learning rate is fixed.
+
+* Finding the right learning rate for each range of epochs is a bit tricky.
+
+### Performance scheduling
+
+* If the validation loss fails to decrease over a fixed number of epochs, then we can reduce the learning rate by a factor of **lambda**.
+
+### 1Cycle scheduling
+
+* Here we first increase the learning rate linearly from x to y halfway through the training
+* In the next half of the training, we decrease the learning rate linearly from y back to x.
+* Upper cap(y) for the learning rate is usually chosen to be 10 times that of the lower cap(x).
+* To rightly choose the upper cap(y) we can use the technique discussed in tuining the learning rate hyperparameter in the previous chapter.
+
+* If we are using the optimizer with momentum, then we start with high momentum and reduce the momentum linearly during first half. In the second half of the training, we start with this reduced momentum and increase linearly back to the original momentum with which we started.
+
 ## Regularization
+
+* Any technique that avoid overfitting can be considered as a regularization technique.
+* Early stopping is a regularization technique
+
+### L1 and L2 regularization
+
+* Use for L1 regularization when we need a sparse model.
+* In neural networks, regularization is configured for each layer.
+
+### Dropout
+
+> It is a fairly simple algorithm: at every training step, every neuron (including the input neurons, but always excluding the output neurons) has a probability `p` of being temporarily “dropped out,” meaning it will be entirely ignored during this training step, but it may be active during the next step. The hyperparameter `p` is called the dropout rate, and it is typically set between 10% and 50%: closer to 20–30% in recurrent neural nets, and closer to 40–50% in convolutional neural networks. After training, neurons don’t get dropped anymore.
+
+* Dropout creates a neural network of unique neuron combinations every step.
+* Dropout is applied to upper layers in practice.
+
+> Moreover, many state-of-the-art architectures only use dropout after the
+last hidden layer, so you may want to try this if full dropout is too strong.
+
+**NOTE**: * After training, all the input connection weights should be multiplied by (1-p). This is taken care in libraries like keras. But when we implement our own dropout, we need to ensure this.
+
+* In case of self normalizing networks, we have to use **alpha dropout** so as to preserve the normalization.
+* Always evaluate the trained model on the training set with dropout disabled to identify overfitting.
+* Increasing the dropout rate(`p`) increases the regularization which helps to reduce overfitting.
+* Dropout slows down convergence.
+
+### Monte Carlo(MC) Dropout
+
+* Averaging over multiple predictions made on the same dataset using dropout enabled gives the MonteCarlo estimate.
+* Number of predictions to make is a hyperparameter. Higher its value, better the predictions and its uncertainty estimates. But high value also increases the prediction latency.
+
+### Max norm regularization
+
+* This is considered as a constraint.
+* For each neuron, it constrains the weights such that `magnitude(w) <= r`.
+* Here l2 norm of the vector is used and `r` is the hyperparameter.
+* Reducing `r` increases the amount of regularization.
+* This can be used to alleviate unstable gradients when batch normalization is not used.
