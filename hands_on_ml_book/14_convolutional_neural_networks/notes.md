@@ -59,3 +59,5 @@ print(input_size)
 # for (3,4) layer, we need input size of 7,9 with the given
 # receptive field and stride sizes.
 ```
+
+### Filters

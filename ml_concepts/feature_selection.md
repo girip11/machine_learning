@@ -53,6 +53,9 @@ Feature selection methods can be categorized in to
 
 * It computes **chi-squared stats** between each **non-negative** feature and class.
 * This is often used to find the **importance of a categorical feature** against a categorical task(classification task).
+* In chi2 tests, the null hypothesis is that the two variables(feature and the target) are independent.
+
+> When two features are independent, the observed count is close to the expected count, thus we will have smaller Chi-Square value. So high Chi-Square value indicates that the hypothesis of independence is incorrect. In simple words, higher the Chi-Square value the feature is more dependent on the response and it can be selected for model training. - [chi2 test](https://towardsdatascience.com/chi-square-test-for-feature-selection-in-machine-learning-206b1f0b8223)
 
 #### ANOVA F-value for feature selection
 
