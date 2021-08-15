@@ -129,3 +129,4 @@ tryouts/**/*.csv
 .idea/
 dataset/
 hands_on_ml_book/10_artificial_neural_networks/.tensorboard
+.virtual_documents/
