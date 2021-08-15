@@ -28,7 +28,6 @@
       "VSCODE_INTEGRATED_TERMINAL": "true",
       "PYTHONPATH": "${workspaceFolder}:${env:PYTHONPATH}"
     },
-    "terminal.integrated.rendererType": "dom",
     "git.autorefresh": true,
     "markdownlint.ignore": ["**/*.md.html"],
     "files.insertFinalNewline": true,
@@ -41,7 +40,7 @@
     "shellformat.flag": "-i 2 -ci -sr -bn",
     "python.languageServer": "Pylance",
     "python.pythonPath": "${workspaceFolder}/.venv/bin/python",
-    "python.pipenvPath": "/home/girish/.pyenv/shims/pipenv",
+    "python.poetryPath": "${env:HOME}/.poetry/bin/poetry",
     "python.formatting.provider": "black",
     "autoDocstring.docstringFormat": "numpy",
     "python.autoComplete.showAdvancedMembers": true,
