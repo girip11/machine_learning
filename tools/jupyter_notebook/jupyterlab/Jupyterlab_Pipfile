@@ -1,0 +1,27 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+jupyterlab = "*"
+jupyterlab-lsp = "*"
+jupyterlab-git = "*"
+jupyterlab-system-monitor = "*"
+python-lsp-server = {extras = ["all"], version = "*"}
+nbdime = "*"
+ipykernel = "*"
+ipython = "*"
+pylsp-mypy = "*"
+pyls-flake8 = "*"
+pyls-isort = "*"
+python-lsp-black = "*"
+jupyterlab-code-formatter = "*"
+
+[packages]
+
+[requires]
+python_version = "3.8"
+
+[pipenv]
+allow_prereleases = true
