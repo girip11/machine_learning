@@ -8,19 +8,19 @@ if [[ $# -ne 1 ]]; then
 fi
 
 echo "Running autoflake"
-pipenv run nbqa autoflake -i --remove-all-unused-imports "$1"
+poetry run nbqa autoflake -i --remove-all-unused-imports "$1"
 
 echo "Running isort"
-pipenv run nbqa isort "$1"
+poetry run nbqa isort "$1"
 
 echo "Running black"
-pipenv run nbqa black "$1"
+poetry run nbqa black "$1"
 
 echo "Running pyupgrade"
-pipenv run pyupgrade "$1"
+poetry run pyupgrade "$1"
 
 echo "Running flake8"
-pipenv run nbqa flake8 "$1"
+poetry run nbqa flake8 "$1"
 
 echo "Running mypy"
-pipenv run nbqa mypy "$1"
+poetry run nbqa mypy "$1"

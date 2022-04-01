@@ -25,7 +25,6 @@
     "editor.fontSize": 16,
 
     "terminal.integrated.env.linux": {
-      "VSCODE_INTEGRATED_TERMINAL": "true",
       "PYTHONPATH": "${workspaceFolder}:${env:PYTHONPATH}"
     },
     "git.autorefresh": true,
@@ -39,17 +38,17 @@
     "shellcheck.run": "onSave",
     "shellformat.flag": "-i 2 -ci -sr -bn",
     "python.languageServer": "Pylance",
-    "python.pythonPath": "${workspaceFolder}/.venv/bin/python",
-    "python.poetryPath": "${env:HOME}/.poetry/bin/poetry",
+    "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+    "python.poetryPath": "${env:POETYR_HOME}/bin/poetry",
     "python.formatting.provider": "black",
     "autoDocstring.docstringFormat": "numpy",
-    "python.autoComplete.showAdvancedMembers": true,
     "python.linting.banditEnabled": true,
     "python.linting.flake8Enabled": true,
     "python.linting.mypyEnabled": true,
     "python.linting.pydocstyleEnabled": true,
     "python.linting.enabled": true,
     "python.linting.lintOnSave": true,
+    "python.sortImports.path": "${workspaceFolder}/.venv/bin/isort",
     "python.testing.pytestEnabled": true,
     "python.testing.pytestPath": "pytest",
     // "python.testing.pytestArgs": ["test"],
@@ -62,6 +61,9 @@
         }
       ]
     },
-    "jupyter.jupyterServerType": "remote"
+    "jupyter.jupyterServerType": "remote",
+    "files.watcherExclude": {
+        "**/target": true
+    }
   }
 }

@@ -2,10 +2,7 @@
 FILE=$1
 
 echo "Running autoflake"
-pipenv run autoflake -i --remove-all-unused-imports "$FILE"
-
-echo "Running isort"
-pipenv run isort "$FILE"
+poetry run autoflake -i --remove-all-unused-imports "$FILE"
 
 echo "Running pyupgrade"
-pipenv run pyupgrade "$FILE"
+poetry run pyupgrade "$FILE"
