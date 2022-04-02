@@ -9,10 +9,10 @@ repos:
       - id: nbqa-black
         args:
           - "--check"
-          - "--target-version=py38"
-          - "--line-length=100"
+          - "--config=pyproject.toml"
       - id: nbqa-isort
         args:
           - "--check"
+          - "--settings-path=isort.cfg"
       - id: nbqa-flake8
       - id: nbqa-mypy
