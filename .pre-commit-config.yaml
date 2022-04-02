@@ -9,6 +9,8 @@ repos:
       - id: nbqa-black
         args:
           - "--check"
+          - "--target-version=py38"
+          - "--line-length=100"
       - id: nbqa-isort
         args:
           - "--check"

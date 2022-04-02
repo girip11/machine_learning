@@ -1,9 +1,10 @@
-# Using Pandas
+# Learning Pandas
 
 ## Tutorials
 
-* [Pandas tutorial](./pandas_tutorial.ipynb)
-* [Pandas tutirial Hands on ML](https://github.com/ageron/handson-ml2/blob/master/tools_pandas.ipynb)
+* [The Ultimate Guide to the Pandas Library for Data Science in Python](https://www.freecodecamp.org/news/the-ultimate-guide-to-the-pandas-library-for-data-science-in-python/)
+* [Pandas tutorial Hands on ML](https://github.com/ageron/handson-ml2/blob/master/tools_pandas.ipynb)
+* [The Pandas DataFrame: Make Working With Data Delightful](https://realpython.com/pandas-dataframe/)
 
 ## Practice
 

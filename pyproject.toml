@@ -35,6 +35,7 @@ tensorflow = "^2.6.0"
 voila = "^0.2.10"
 xgboost = "^1.4.2"
 xlrd = "^2.0.1"
+openpyxl = "^3.0.9"
 
 [tool.poetry.dev-dependencies]
 GPUtil = "^1.4.0"
