@@ -13,6 +13,6 @@ repos:
       - id: nbqa-isort
         args:
           - "--check"
-          - "--settings-path=isort.cfg"
+          - "--settings-path=.isort.cfg"
       - id: nbqa-flake8
       - id: nbqa-mypy
