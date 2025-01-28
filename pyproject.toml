@@ -1,59 +1,110 @@
-[tool.black]
-line-length = 100
-target-version = ['py38']
-
-[tool.poetry]
-authors = ["girish pasupathy <girishpasupathy@gmail.com>"]
+[project]
+name = "machine_learning"
+version = "0.0.1"
 description = "Machine learning."
-license = "MIT"
-name = "Machine learning"
-version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+    "catboost>=1.2.5",
+    "category-encoders>=2.8.0",
+    "graphviz>=0.20.3",
+    "humanize>=4.11.0",
+    "ipywidgets>=8.1.5",
+    "lightgbm>=4.5.0",
+    "matplotlib>=3.10.0",
+    "numpy>=2.2.2",
+    "openpyxl>=3.1.5",
+    "pandas>=2.2.3",
+    "pydot>=3.0.4",
+    "scikit-learn>=1.6.1",
+    "seaborn>=0.13.2",
+    "seaborn-qqplot>=0.5.0",
+    "sentencepiece>=0.2.0",
+    "tensorflow>=2.14.0",
+    "torch>=2.5.1",
+    "torchvision>=0.20.1",
+    "voila>=0.5.8",
+    "xgboost>=2.1.3",
+    "xlrd>=2.0.1",
+]
 
-[tool.poetry.dependencies]
-azure-cognitiveservices-search-imagesearch = "^2.0.0"
-catboost = "^0.26.1"
-category-encoders = "^2.2.2"
-graphviz = "^0.17"
-humanize = "^3.11.0"
-ipywidgets = "^7.6.3"
-lightgbm = "^3.2.1"
-matplotlib = "^3.4.3"
-numpy = "1.19.5"
-pandas = "^1.3.1"
-pydot = "^1.4.2"
-python = "^3.8"
-scikit-learn = "^0.24.2"
-seaborn = "^0.11.1"
-seaborn-qqplot = "^0.5.0"
-sentencepiece = "^0.1.96"
-tensorflow = "^2.6.0"
-# unable to install torch using poetry. Used pip to install the below
-# torch = {url = "https://download.pytorch.org/whl/cu111/torch-1.9.0%2Bcu111-cp38-cp38-linux_x86_64.whl"}
-# torchvision = {url = "https://download.pytorch.org/whl/cu111/torchvision-0.10.0%2Bcu111-cp38-cp38-linux_x86_64.whl"}
-#fastai=
-#fastbook=
-voila = "^0.2.10"
-xgboost = "^1.4.2"
-xlrd = "^2.0.1"
-openpyxl = "^3.0.9"
+[dependency-groups]
+dev = [
+    "gputil>=1.4.0",
+    "ipykernel>=6.29.5",
+    "ipython>=8.31.0",
+    "jupyter-http-over-ws>=0.0.8",
+    "marimo>=0.10.17",
+    "mypy>=1.14.1",
+    "psutil>=6.1.1",
+    "pytest>=8.3.4",
+    "ruff>=0.9.3",
+]
 
-[tool.poetry.dev-dependencies]
-GPUtil = "^1.4.0"
-autoflake = "^1.4"
-black = "^21.7b0"
-flake8 = "^3.9.2"
-ipykernel = "^6.1.0"
-ipython = "^7.26.0"
-isort = "^5.9.3"
-jupyter-http-over-ws = "^0.0.8"
-mypy = "^0.910"
-nbqa = "^1.1.0"
-pre-commit = "^2.17.0"
-psutil = "^5.8.0"
-pydocstyle = "^6.1.1"
-pytest = "^6.2.4"
-pyupgrade = "^2.23.3"
+[tool.ruff]
+line-length = 99
+target-version = "py311"
 
-[build-system]
-build-backend = "poetry.core.masonry.api"
-requires = ["poetry-core>=1.0.0"]
+[tool.ruff.lint]
+select = [
+    # pycodestyle
+    "E",
+    # Pyflakes
+    "F",
+    # pyupgrade
+    "UP",
+    # flakes-bugbear
+    "B",
+    # flake8-simplify
+    "SIM",
+    # isort
+    "I",
+    # ruff specific
+    "RUF",
+]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+
+[tool.uv.pip]
+index-url = "https://pypi.org/simple"
+emit-index-url = true
+
+[tool.mypy]
+check_untyped_defs = true
+disallow_incomplete_defs = true
+disallow_untyped_calls = true
+disallow_untyped_decorators = false
+disallow_untyped_defs = true
+ignore_missing_imports = true
+implicit_reexport = false
+no_implicit_optional = true
+pretty = true
+python_version = "3.11"
+scripts_are_modules = true
+show_error_codes = true
+show_error_context = true
+show_traceback = true
+strict_equality = true
+strict_optional = true
+warn_redundant_casts = true
+warn_unreachable = true
+warn_unused_ignores = true
+
+#[project.optional-dependencies]
+# [tool.poetry.dev-dependencies]
+# GPUtil = "^1.4.0"
+# autoflake = "^1.4"
+# black = "^21.7b0"
+# flake8 = "^3.9.2"
+# ipykernel = "^6.1.0"
+# ipython = "^7.26.0"
+# isort = "^5.9.3"
+# jupyter-http-over-ws = "^0.0.8"
+# mypy = "^0.910"
+# nbqa = "^1.1.0"
+# pre-commit = "^2.17.0"
+# psutil = "^5.8.0"
+# pydocstyle = "^6.1.1"
+# pytest = "^6.2.4"
+# pyupgrade = "^2.23.3"
