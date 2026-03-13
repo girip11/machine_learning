@@ -1,10 +1,10 @@
 {
-    "folders": [
-        {
-            "path": "."
-        }
-    ],
-    "settings": {
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
         "editor.renderWhitespace": "all",
 
         "[markdown]": {
@@ -16,11 +16,11 @@
         },
         "[python]": {
             "editor.wordWrapColumn": 100,
+            "editor.defaultFormatter": "charliermarsh.ruff",
             "editor.codeActionsOnSave": {
-                "source.fixAll": "explicit",
-                "source.organizeImports": "explicit"
-            },
-            "editor.defaultFormatter": "charliermarsh.ruff"
+                "source.fixAll.ruff": "explicit",
+                "source.organizeImports.ruff": "explicit"
+            }
         },
         "editor.tabSize": 4,
         "editor.insertSpaces": true,
@@ -28,12 +28,13 @@
         "editor.wordWrapColumn": 100,
         "editor.detectIndentation": false,
         "editor.fontSize": 18,
-        "editor.fontFamily": "'Monaspace Xenon Var', 'monospace'",
+        "editor.fontFamily": "'Monaspace Xenon', 'monospace'",
         "editor.fontLigatures": "'calt', 'liga', 'dlig', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08'",
-        "editor.fontVariations": "'wght' 100, 'wdth' 100",
+        "editor.fontVariations": "'wght' 200, 'wdth' 100",
         "terminal.integrated.fontSize": 17,
-        "terminal.integrated.fontFamily": "Monaspace Xenon Var",
-        "terminal.integrated.env.linux": {
+        "terminal.integrated.fontFamily": "Monaspace Xenon",
+        "terminal.integrated.shellIntegration.enabled": true,
+        "terminal.integrated.env.osx": {
             "PYTHONPATH": "${workspaceFolder}:${env:PYTHONPATH}"
         },
         "git.autorefresh": true,
@@ -45,11 +46,11 @@
         "shellcheck.useWorkspaceRootAsCwd": true,
         "shellcheck.run": "onSave",
         "shellformat.flag": "-i 2 -ci -sr -bn",
+        "ruff.lint.enable": true,
+        "ruff.format.backend": "uv",
         "ruff.fixAll": true,
         "ruff.organizeImports": true,
         "ruff.importStrategy": "fromEnvironment",
-        "ruff.nativeServer": "on",
-        "mypy-type-checker.importStrategy": "fromEnvironment",
         "python.languageServer": "Pylance",
         "python.analysis.extraPaths": ["src"],
         "python.analysis.autoImportCompletions": true,
@@ -58,15 +59,19 @@
         "python.analysis.indexing": true,
         "python.analysis.autoSearchPaths": true,
         "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
-        "python.poetryPath": "${env:POETYR_HOME}/bin/poetry",
         "autoDocstring.docstringFormat": "google",
-        "python.testing.pytestEnabled": true,
-        "python.testing.pytestPath": "pytest",
+        "github.copilot.enable": {
+            "*": true,
+            "plaintext": false,
+            "markdown": false,
+            "scminput": false
+        },
+        "debugpy.debugJustMyCode": false,
         "emeraldwalk.runonsave": {
             "commands": []
         },
+        "markdown-pdf.styles": ["docs/styles/md_pdf.css"],
         "files.watcherExclude": {
             "**/target": true
         }
-    }
 }
